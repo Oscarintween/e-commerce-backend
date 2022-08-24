@@ -8,6 +8,9 @@ const port = process.env.PORT
 app.use(cors())
 connectDB()
 app.use(express.json())
+app.get('/',(req,res)=>{
+    res.send('hola mundo')
+})
 app.use('/motorcycles',require('./routes/motorcycle'))
 app.use('/user',require('./routes/users'))
 app.listen(port,()=>{
