@@ -1,0 +1,12 @@
+GET http://localhost:4000/user
+###
+GET http://localhost:4000/motorcycles
+###
+POST  http://localhost:4000/user/register
+Content-Type: application/json
+
+{
+    "name":"paipas",
+    "email":"paipas@mail.com",
+    "password":"piripaipas"
+}
